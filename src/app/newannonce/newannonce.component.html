@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+
+            <div class="card-header">
+                <strong>Ajouter une Annonce</strong>
+            
+            </div>
+
+         <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+              <form (ngSubmit)="enregistrerAnnonce()"> 
+
+        
+                <div class="form-row">
+                  <div class="col-md-6 mb-6">
+                   <label for="name">Titre</label> 
+                   <input type="text" required pattern="[0-9a-zA-Z-\.]{3,20}" class="form-control"   name="titre" [(ngModel)]="annonce.titre" >
+                  </div>
+                  <div class="col-md-6 mb-6">       
+                  <label for="name">Description</label>   <input type="text"  required pattern="[0-9a-zA-Z-\.]{3,40}" class="form-control"   name="description" [(ngModel)]="annonce.description">
+                   </div>
+                   
+
+                </div>
+       
+               <div class="form-row">
+                   <div class="col-md-8 mb-8">
+                  <label for="name">Photo</label> 
+                  <input type="text" class="form-control" type="file" accept="image/*" (change)="OnSelectFile($event)">
+ 
+                  </div>
+                 
+
+                    
+    
+                </div>
+
+
+               
+                 
+
+            
+  
+                 <div class="form-row">
+                
+                  <div class="col-md-4 mb-4">
+                        <button type="submit" class="btn btn-success btn-sm" ><i class="fa fa-database"></i>Enregistrer</button>
+                  </div>
+                  </div>
+             </form>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
