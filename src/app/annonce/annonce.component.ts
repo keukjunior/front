@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrincipalService } from '../service/principal.service';
-import { Annonce } from '../model/annonce.model';
+
 
 @Component({
   selector: 'app-annonce',
