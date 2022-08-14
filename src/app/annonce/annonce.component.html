@@ -1,1 +1,35 @@
-<p>annonce works!</p>
+<app-header></app-header>
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body"> 
+            <table class="table table-striped"> 
+                <tr> <th>Id</th>
+                  <th>Titre</th> 
+                  <th>Description</th> 
+                  <th>Photo<th>
+                      <th>Actions</th> </tr> 
+                <tbody *ngFor="let ann of annonces">
+                     <tr > <td>{{ann.idannonce}}</td> 
+                      <td>{{ann.titre}}</td> 
+                      <td>{{ann.description}}</td>
+
+                      <td><img src="{{this.service.hostt+'/'+ann.idannonce}}" alt="" width="100"></td>
+      
+                      <td>
+                          <td>
+                              <a class="btn btn-info" >Details</a>
+                             
+                              <a class="btn btn-danger" style="margin-left: 10px"  >Supprimer</a>
+                          
+                          </td>
+                         
+                      
+                      </tr> 
+                      </tbody>
+              </table> 
+          </div> 
+    </div> 
+    
+
+  </div>
