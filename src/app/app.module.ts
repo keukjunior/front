@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 
 import {HttpClientModule} from "@angular/common/http";
+import { DetailannonceComponent } from './detailannonce/detailannonce.component';
 
 
 
@@ -17,7 +18,8 @@ import {HttpClientModule} from "@angular/common/http";
     AppComponent,
     AnnonceComponent,
     NewannonceComponent,
-    HeaderComponent
+    HeaderComponent,
+    DetailannonceComponent
   ],
   imports: [
     BrowserModule,

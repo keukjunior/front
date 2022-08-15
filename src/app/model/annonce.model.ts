@@ -3,5 +3,6 @@ export class  Annonce{
     titre!: string;
     description!: string;
     photo!: string;
+    
 
 }

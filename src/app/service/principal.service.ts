@@ -31,7 +31,9 @@ export class PrincipalService {
   return this.http.post(this.host+'/saveAnnonce',formData);
 }
 
-
+getannonce(idAnnonce:number):Observable<Annonce>{
+  return this.http.get<Annonce>("http://localhost:8096/listeannonce/"+idAnnonce);
+}
 
 
 
