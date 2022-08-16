@@ -21,19 +21,19 @@
                   
                   <div class="col-md-4 mb-4">
                    <label for="name">Titre</label> 
-                   <input type="text" class="form-control"   name="nom" ngModel [ngModel]="ann.titre">
+                   <input type="text" class="form-control"   name="nom" [(ngModel)]="ann.titre">
                   </div>
   
                    <div class="col-md-4 mb-4">
-                    <label for="name">Description</label>   <input type="text" class="form-control"   name="description"  ngModel [ngModel]="ann.description">
+                    <label for="name">Description</label>   <input type="text" class="form-control"   name="description"  [(ngModel)]="ann.description">
                    </div> 
 
                 </div>
        
                <div class="form-row">
                 <div class="col-md-4 mb-4">
-                  <label for="name">Photo</label>   <input type="text" class="form-control"   name="photo" ngModel  [ngModel]="ann.photo">
-                </div>
+                  <label for="name">Photo</label>   <input type="text" class="form-control"   name="photo" [(ngModel)]="ann.photo" >
+                </div>                                                                                                              
                 
     
                 </div>

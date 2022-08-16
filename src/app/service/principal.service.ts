@@ -9,9 +9,9 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class PrincipalService {
 
-  public host:string="http://localhost:8096";
-  private apiURL:string="http://localhost:8096/listeannonces";
-  public hostt:string="http://localhost:8096/getImages";
+  public host:string="http://localhost:8010";
+  private apiURL:string="http://localhost:8010/listeannonces";
+  public hostt:string="http://localhost:8010/getImages";
  
 
   constructor(private http:HttpClient) { }
@@ -32,7 +32,7 @@ export class PrincipalService {
 }
 
 getannonce(idAnnonce:number):Observable<Annonce>{
-  return this.http.get<Annonce>("http://localhost:8096/listeannonce/"+idAnnonce);
+  return this.http.get<Annonce>("http://localhost:8010/listeannonce/"+idAnnonce);
 }
 
 
